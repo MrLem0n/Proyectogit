@@ -1,0 +1,373 @@
+*{
+
+    box-sizing: border-box; 
+   
+    padding: 0;  
+   
+    margin: 0;
+
+    font-family: tahoma;
+
+    font-size: 12pt;
+    
+   
+   }
+
+/*********************************** sin clasificar ***********************************/
+
+footer {
+    margin-top:100px;
+}
+
+
+h1{ 
+    text-align: center;
+    font-size: 30pt;
+    margin-bottom: 20px;
+    margin-top: 1px;
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+footer{
+    display:block;
+    text-align: center;
+    font-size: 12px;
+}
+
+
+body{
+    
+    background-image: url("../img/Fondo2.jpg");
+
+}
+/*********************************** Navbar ***********************************/
+.container-grid {
+    border: 5px solid black;
+    border-left: none;
+    border-right: none;
+    width: 100vw;
+    height: 20vh;
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content:center;
+    position:sticky;
+ }
+.navbar{
+    position:relative;
+    font-size: 12;
+    background-color: transparent;
+    border: none;
+    
+    
+    height: 50px;
+    grid-column: 1/3;
+    grid-row: 2/2;
+}
+
+
+
+.listaNav{
+    text-align: center;
+    margin-top: 15px;
+}
+.listaNav li{
+    text-align: left;
+    display: inline;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+
+
+A:link {color: black; font-size: 12pt; font-family: arial; text-decoration: none }
+A:hover {color: black; font-size: 12pt; font-family: arial; text-decoration: none }
+A:visited {color: black; font-size: 12pt; font-family: arial; text-decoration: none }
+
+/***********************************  Index ***********************************/ 
+.indexion{
+   
+    overflow: hidden;
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+   
+    
+}
+
+.containerindex{ 
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: 100vh;
+    grid-gap: 10px;
+}
+
+.indexide{
+    
+    overflow: hidden;
+    grid-column: 4/5;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.imagen1{
+    height: 70vh;
+    width: 80vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+   }
+
+.imagenes {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+   
+
+
+/*********************************** Galeria ***********************************/
+
+
+
+    
+
+.gallery-cont {
+    height:100vh;
+    width: 100vw;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+}
+
+/*********************************** Contacto ***********************************/
+
+.formulario {
+
+    margin: 0px 5px 50px 5px;
+
+    padding: auto;
+  
+}
+
+.form {
+    margin: 50px 200px 50px 1px;
+
+
+}
+
+#mensaje {
+    margin-top: 10px;
+    height: 301px; 
+    width: 652px
+}
+
+.opciones{
+    margin: 50px 5px 50px 5px;
+}
+
+/*********************************** Quienes somos ***********************************/
+
+h5{ 
+    margin-left: 125px;
+    grid-column:2/3;
+    font-size:15pt; 
+}
+.h5{ 
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100%;
+}
+
+.parrafos{
+    grid-column: 1/2;
+    margin-top: 15px;
+    margin-left: 25%;
+    display:flex;
+    text-align: center;
+    
+}
+.parrafos2{
+    grid-column: 3/4;
+    display:flex;
+    text-align: center;
+    margin-top: 15px;
+    margin-right: 5%;
+    margin-left:5%;
+    overflow: hidden;
+}
+
+.image-container{
+
+    grid-column:2/3;
+    display:flex;
+    flex-direction: column;
+    justify-content:top ; 
+}
+
+
+#contactp{
+    margin-right: 40%;
+}
+
+#imgw {
+    
+    margin-top: 100px;
+    height: 400px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100%;
+
+}
+
+
+/*********************************** Prodcutos ***********************************/
+
+.img-productos {
+
+    margin: 50px 0px 10px 0px;
+}
+
+.productos1{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    
+}
+.productos2{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.productos3{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+.productos4{
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+
+.grid-productos { 
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows:repeat(4, 25%);
+    text-align: center;
+    
+}
+
+.btn{
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+}
+/*********************************** Media Queries ***********************************/
+
+@media(max-width: 480px) {
+/*** Index***/
+    .container-grid{
+        height: 18vh;
+    }
+
+    .imagen1 { 
+        height:75%; 
+        width: 90%;
+    }
+/*** Quienes somos ***/
+h5{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+#imgw{
+    display:none;
+}
+#gs{ 
+    margin-left: 50px;
+    margin-right: 25px;
+    margin-top: 200px;
+    height: 260px;
+    width: 160px;
+}
+}
+
+@media(min-width:481px) and (max-width:768px) {
+/*** Index***/
+.container-grid{
+    height: 18vh;
+}
+    .imagen1{ 
+
+        height: 100%; 
+        width: 90%;
+    }
+/*** Quienes somos ***/    
+h5{
+    margin-left: 0px;
+    margin-top: 10px;
+}
+#imgw{
+    display:none;
+}
+#gs{  
+    margin-left: 50px;
+    margin-right: 25px;
+    margin-top: 200px;
+    height: 260px;
+    width: 160px;
+
+}
+}
+
+@media(min-width:769px) and (max-width:1024px) {
+/*** Index***/
+    .container-grid{
+        height: 18vh;
+    }
+    .imagen1 {
+
+        height: 80%; 
+    }
+/*** Quienes somos ***/
+h5{
+    margin-left: 75px;
+    margin-top: 10px;
+}
+#imgw{
+    display:none;
+}
+#gs{  
+    margin-top: 50px;
+    height: 460px;
+    width: 360px;
+
+}
+}
+
+@media(min-width: 1025px) {
+/*** Quienes somos ***/
+    #gs{ display:none; }
+/*** Productos ***/
+
+    .productos1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        
+    }
+    .productos2{
+        grid-column: 3/4;
+        grid-row: 1/3;
+    }
+    .productos3{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .productos4{
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+}
