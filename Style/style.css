@@ -29,6 +29,12 @@ h1{
     grid-row: 1/2;
 }
 
+h1:hover {
+
+    transform:rotate(180deg);
+    transition-duration: 2.5s;
+}
+
 footer{
     display:block;
     text-align: center;
@@ -114,12 +120,17 @@ A:visited {color: black; font-size: 12pt; font-family: arial; text-decoration: n
 }
 
 .imagen1{
-    height: 70vh;
-    width: 80vw;
+    height: 40vh;
+    width: 50vw;
     margin-top: 20px;
     margin-bottom: 20px;
     
    }
+
+.imagen1:hover{
+
+    transform: scale( 1.5,1.5)
+}
 
 .imagenes {
     display: flex;
