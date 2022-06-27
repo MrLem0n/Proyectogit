@@ -106,7 +106,7 @@ A:visited {color: black; font-size: 12pt; font-family: arial; text-decoration: n
 .containerindex{ 
     display: grid;
     grid-template-columns: repeat(5, 20%);
-    grid-template-rows: 100vh;
+    margin-top: 50px;
     grid-gap: 10px;
 }
 
